@@ -1,0 +1,167 @@
+.slick-active {
+  outline: none !important;
+}
+
+html {
+  width: 1980px;
+  font-size: 14px;
+}
+
+body {
+  padding-top: 40px;
+  background: #eef3f5;
+  color: #131313;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #009adf;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 20px 30px;
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #009adf;
+  border-bottom: 5px solid #0077ac;
+}
+
+.btn-primary:hover {
+  background-color: #00a8f3;
+}
+
+.top-nav {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.top-nav__menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.top-nav__menu li {
+  margin-right: 45px;
+}
+
+.top-nav__menu li a {
+  color: #131313;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.top-nav__menu li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #009adf;
+  transform: translateY(37px) scale(0);
+  transition: all 0.2s;
+}
+
+.top-nav__menu li a:hover {
+  text-decoration: none;
+}
+
+.top-nav__menu li a:hover::after {
+  transform: translateY(37px) scale(1);
+}
+
+.left-sidebar, .content {
+  margin-top: 40px;
+}
+
+.left-sidebar__menu, .content__menu {
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+}
+
+.left-sidebar__menu li, .content__menu li {
+  transition: all 0.2s;
+}
+
+.left-sidebar__menu li:first-child a, .content__menu li:first-child a {
+  padding-top: 20px;
+}
+
+.left-sidebar__menu li:last-child a, .content__menu li:last-child a {
+  padding-bottom: 20px;
+}
+
+.left-sidebar__menu li:hover, .content__menu li:hover {
+  background-color: #009adf;
+}
+
+.left-sidebar__menu li:hover a, .content__menu li:hover a {
+  color: #ffffff;
+}
+
+.left-sidebar__menu li a, .content__menu li a {
+  display: block;
+  padding: 15px 29px;
+  text-decoration: none;
+  color: #131313;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.left-sidebar__object, .content__object {
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+.left-sidebar__object-description, .content__object-description {
+  padding: 30px;
+  color: #959595;
+}
+
+.left-sidebar__object-description h3, .content__object-description h3 {
+  font-weight: 400;
+}
+
+.content p {
+  color: #3d3d3d;
+}
+
+.content a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.directions {
+  margin-top: 80px;
+}
+
+.directions-blocks {
+  background-color: #eef3f5;
+  margin-top: 40px;
+}
+
+.directions-block {
+  max-width: 170px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 220px;
+  text-align: center;
+  padding: 15px 20px;
+  margin: 0 auto;
+}
+
+.directions-block h3 {
+  color: #009adf;
+}
+/*# sourceMappingURL=main.css.map */
