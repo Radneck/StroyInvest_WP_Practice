@@ -11,6 +11,7 @@ body
   background: $body_bg
   color: $text_clr
   font-family: 'Roboto', sans-serif
+  margin: 0
 a
   color: $active_clr
 h2
@@ -108,10 +109,47 @@ h2
     text-align: center
     padding: 15px 20px
     margin: 0 auto
+    background-position: bottom center
+    background-repeat: no-repeat
     h3
       color: $active_clr
         // padding-top: 23px
-
-  
+.footer
+  margin-top: 60px
+  background-color: $text_clr
+  color: $footer_text
+  padding: 59px 0
+  &-policy
+    font-size: 12px
+  a
+    color: $footer_text
+    text-decoration: none
+    &:hover
+      color: $white
+  small
+    display: block
+    margin-top: 56px
+    font-size: 10px
+    line-height: 16px
+    max-width: 80%
+  ul
+    padding: 0
+    list-style: none
+    li
+      line-height: 32px
+  &-contacts
+    text-align: right
+    margin-bottom: 35px
+    &__phone
+      font-size: 20px
+      font-weight: 500
+      a
+        color: $active_clr
+  &-social-links
+    @extend .footer-contacts
+    li
+      display: inline-block
+      width: 35px
+      height: 35px
 
 
