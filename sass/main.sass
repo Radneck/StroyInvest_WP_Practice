@@ -5,7 +5,7 @@
 
 html
   width: 100%
-  font-size: 14px
+  font-size: 10px
 
 body
   padding-top: 40px
@@ -13,6 +13,7 @@ body
   color: $text_clr
   font-family: 'Roboto', sans-serif
   margin: 0
+  font-size: 14px
 a
   color: $active_clr
 h2
@@ -38,7 +39,6 @@ h2
     display: inline-block
   &__btn
     display: none
-    background-color: red
     width: 30px
     height: 30px
     background-color: transparent
@@ -46,7 +46,7 @@ h2
     font-size: 20px
     position: absolute
     right: 15px
-    top: -50px
+    top: -50%
     &:hover
       cursor: pointer
   &__menu
@@ -54,7 +54,7 @@ h2
     padding: 0
     display: flex
     li
-      margin-right: 45px
+      margin-right: 34px
       a
         color: $text_clr
         text-transform: uppercase
@@ -72,8 +72,27 @@ h2
           text-decoration: none
           &::after
             transform: translateY(37px) scale(1)
-.left-sidebar, .content
-  margin-top: 40px
+.left-sidebar
+  margin-top: 4rem
+  &__btn
+    display: none
+    background-color: $white
+    padding: 15px
+    position: relative
+    &:hover
+      cursor: pointer
+    &::after
+      content: ''
+      display: inline-block
+      position: absolute
+      top: 55%
+      margin-top: -10px
+      right: 20px
+      width: 10px
+      height: 10px
+      border-bottom: 2px solid $text_clr
+      border-right: 2px solid $text_clr
+      transform: rotate(45deg)
   &__menu
     background-color: $white
     list-style: none
@@ -101,13 +120,15 @@ h2
   &__object
     margin-top: 30px
     background-color: $white
+    img
+      width: 100%
     &-description
       padding: 30px
       color: $leftSideObjText
       h3
         font-weight: 400
 .content
-  // margin-top: 40px
+  margin-top: 4rem
   p
     color: $text_second
   a
