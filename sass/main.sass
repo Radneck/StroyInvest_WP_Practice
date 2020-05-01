@@ -33,7 +33,7 @@ h2
 .top-nav
   width: 100%
   background-color: $white
-  padding: 15px
+  padding: 15px 34px
   position: relative
   &__logo
     display: inline-block
@@ -55,6 +55,8 @@ h2
     display: flex
     li
       margin-right: 34px
+      &:last-child
+        margin-right: 0
       a
         color: $text_clr
         text-transform: uppercase
@@ -129,12 +131,14 @@ h2
         font-weight: 400
 .content
   margin-top: 4rem
+  margin-bottom: 7.6rem
   p
     color: $text_second
   a
     text-decoration: none
     font-weight: 700
     text-transform: uppercase
+ 
 .directions
   margin-top: 80px
   &-blocks
@@ -190,5 +194,91 @@ h2
       display: inline-block
       width: 35px
       height: 35px
+//  Пошла секция About
+
+.team
+  text-align: center
+  &-img
+    margin-top: 4rem
+  h4
+    font-size: 18px
+    font-weight: 400
+    margin-bottom: 15px
+    color: $text_second
+    line-height: 1.667
+  p
+    color: $text_second
+    line-height: 1.429
+
+.contacts
+  a
+    text-transform: none
+
+  &-phone a, &-email a
+    font-size: 16px
+    font-weight: 400
+    line-height: 2.063
+    padding-left: 35px
+    color: $text_clr
+  &-phone
+    a
+      background-image: url('/img/contacts/tel.svg')
+      background-repeat: no-repeat
+      background-size: 20px 100%
+      background-position: left center
+  &-email
+    a
+      background-image: url('/img/contacts/mail.svg')
+      background-repeat: no-repeat
+      background-size: 27px 100%
+      background-position: left center
+      text-transform: lowercase   
+  &-address
+    display: block
+    margin-bottom: 15px
+    font-size: 16px
+    font-weight: 400
+    line-height: 2
+  &-btn
+    margin-top: 35px
+    max-width: 270px
+    width: 100%
+    text-align: center 
+  &-social-links
+    ul
+      margin-top: 36px
+      padding: 0
+      text-align: left
+      list-style: none
+      li
+        display: inline-block
+        margin-right: 15px
+
+// структура
+
+.org
+  &-card
+    background-color: $white
+    padding: 30px
+    margin-bottom: 30px
+    min-height: 40rem
+    transition: all 0.2s
+    &:hover
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 1, 0.1)
+    &__title
+      display: block
+      margin-bottom: 20px
+    small
+      color: $text_grey
+      font-size: 12px
+      line-height: 1.333
+    p
+      line-height: 22px
 
 @import '_media'
+
+
+
+
+
+

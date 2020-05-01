@@ -109,7 +109,7 @@ h2 {
 .top-nav {
   width: 100%;
   background-color: #ffffff;
-  padding: 15px;
+  padding: 15px 34px;
   position: relative;
 }
 
@@ -141,6 +141,10 @@ h2 {
 
 .top-nav__menu li {
   margin-right: 34px;
+}
+
+.top-nav__menu li:last-child {
+  margin-right: 0;
 }
 
 .top-nav__menu li a {
@@ -253,6 +257,7 @@ h2 {
 
 .content {
   margin-top: 4rem;
+  margin-bottom: 7.6rem;
 }
 
 .content p {
@@ -347,6 +352,108 @@ h2 {
   height: 35px;
 }
 
+.team {
+  text-align: center;
+}
+
+.team-img {
+  margin-top: 4rem;
+}
+
+.team h4 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #3d3d3d;
+  line-height: 1.667;
+}
+
+.team p {
+  color: #3d3d3d;
+  line-height: 1.429;
+}
+
+.contacts a {
+  text-transform: none;
+}
+
+.contacts-phone a, .contacts-email a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.063;
+  padding-left: 35px;
+  color: #131313;
+}
+
+.contacts-phone a {
+  background-image: url("/img/contacts/tel.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+  background-position: left center;
+}
+
+.contacts-email a {
+  background-image: url("/img/contacts/mail.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 100%;
+  background-position: left center;
+  text-transform: lowercase;
+}
+
+.contacts-address {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.contacts-btn {
+  margin-top: 35px;
+  max-width: 270px;
+  width: 100%;
+  text-align: center;
+}
+
+.contacts-social-links ul {
+  margin-top: 36px;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.contacts-social-links ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.org-card {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 30px;
+  min-height: 40rem;
+  transition: all 0.2s;
+}
+
+.org-card:hover {
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 1, 0.1);
+}
+
+.org-card__title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.org-card small {
+  color: #898989;
+  font-size: 12px;
+  line-height: 1.333;
+}
+
+.org-card p {
+  line-height: 22px;
+}
+
 @media (max-width: 480px) {
   .top-nav__btn {
     display: block;
@@ -390,7 +497,7 @@ h2 {
     display: block;
     position: absolute;
     top: -45px;
-    right: -16%;
+    right: -21%;
   }
   .top-nav__menu {
     flex-direction: column;
@@ -423,7 +530,7 @@ h2 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
   html {
     font-size: 5px;
   }
