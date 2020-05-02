@@ -275,7 +275,38 @@ h2
     p
       line-height: 22px
 
+// Оформляем calc
+.calc
+  &-progs
+    display: flex
+    flex-wrap: wrap
+  &-radio
+    flex-basis: 50%
+    label
+      display: inline-block
+      margin-bottom: 20px
+      &::before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        background-color: $active_clr
+        border: 6px solid $white
+        width: 24px
+        height: 24px
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 1, 0.1)
+        background-color: $white
+        border-radius: 50%
+
+    input[type="radio"]
+      display: none
+      &:checked
+        &+label::before
+          background-color: $active_clr
+          border: 6px solid $white
+
+
 @import '_media'
+
 
 
 
