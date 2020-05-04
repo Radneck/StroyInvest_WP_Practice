@@ -454,18 +454,44 @@ h2 {
   line-height: 22px;
 }
 
+.calc h4 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
 .calc-progs {
   display: flex;
   flex-wrap: wrap;
+}
+
+.calc-legal {
+  font-size: 11px;
 }
 
 .calc-radio {
   flex-basis: 50%;
 }
 
+.calc-radio:last-child {
+  flex-basis: 100%;
+  display: flex;
+}
+
 .calc-radio label {
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.calc-radio label small {
+  display: block;
+  margin-left: 28px;
+  color: #898989;
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+.calc-radio label:hover {
+  cursor: pointer;
 }
 
 .calc-radio label::before {
@@ -488,6 +514,83 @@ h2 {
 .calc-radio input[type="radio"]:checked + label::before {
   background-color: #009adf;
   border: 6px solid #ffffff;
+}
+
+.calc-popular {
+  padding: 0 5px;
+  margin-left: 16px;
+  height: 25px;
+  background-color: #009adf;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.calc-popular::before {
+  content: '';
+  width: 6px;
+  height: 13px;
+  border: 6px solid transparent;
+  border-right: 6px solid #009adf;
+  position: absolute;
+  left: -12px;
+  top: 6px;
+}
+
+.calc-summ__invest {
+  margin-top: 30px;
+}
+
+.calc-summ__invest_label {
+  margin-right: 10px;
+}
+
+.calc-summ__invest_num {
+  display: inline-block;
+  padding: 10px 48px;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.calc-monthly {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: none;
+  padding: 10px 24px;
+}
+
+.calc-total {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px 24px;
+  margin-right: 40px;
+}
+
+.calc-total strong {
+  font-size: 18px;
+  color: #009adf;
+  font-weight: 400;
+}
+
+.calc-total small {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.calc-monthly {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+}
+
+.calc-monthly small {
+  font-size: 10px;
 }
 
 @media (max-width: 480px) {

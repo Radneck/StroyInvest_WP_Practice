@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./slick/slick-theme.css">
     <link rel="stylesheet" href="./slick/slick.css">
     <!-- Slick -->
+    <link rel="stylesheet" href="./css/powerange.min.css">
+    <!-- powerrange lib -->
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/main.css">
   </head>
@@ -104,44 +106,68 @@
               <div class="col-md-6">
                 <div class="calc-progs">
                   <div class="calc-radio">
-                    <input type="radio" name="radiobtn" id="first">
+                    <input data-month="6" data-per="0.2" type="radio" name="radiobtn" id="first">
                     <label for="first">  
                       <span>20% годовых<small>на 6 месяцев</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="radiobtn" id="sec">
+                    <input data-month="12" data-per="0.24" type="radio" name="radiobtn" id="sec">
                     <label for="sec">
                       <span>24% годовых<small>на 1 год</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="radiobtn" id="third">
+                    <input data-month="24" data-per="0.26" type="radio" name="radiobtn" id="third">
                     <label for="third">
                       <span>26% годовых<small>на 2 года</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="radiobtn" id="fourth">
+                    <input data-month="36" data-per="0.28" type="radio" name="radiobtn" id="fourth">
                     <label for="fourth">
                       <span>28% годовых<small>на 3 года</small></span>
                     </label>
                   </div>
                   <div class="calc-radio">
-                    <input type="radio" name="radiobtn" id="fifth">
+                    <input data-month="48" data-per="0.32" type="radio" checked name="radiobtn" id="fifth">
                     <label for="fifth">
                       <span>32% годовых<small>на 4 года</small></span>
                     </label>
                     <div class="calc-popular">
-                      Популярная программа
+                      популярная программа
                     </div>
                   </div>
                 </div>
+                <div class="calc-legal">
+                  <p>*Наша компания является налоговым агентом, удерживает и оплачивает НДФЛ Вся информация, размещенная на сайте, несет
+                    исключительно рекламный характер и не является публичной офертой.</p>
+                </div>
               </div>
               <div class="col-md-6">
+                <h4>Укажите сумму инвестиций</h4>
+
+                <input type="text" class="calc-range" name="summ">
+
+                <div class="calc-summ__invest">
+                  <span class="calc-summ__invest_label">Сумма:</span>
+                  <span class="calc-summ__invest_num"><span>100 000</span>&#8381;</span>
+                </div>
+
+                <div class="calc-summ__result">
+                  <span class="calc-total">
+                    <strong><span id="total"></span> &#8381;</strong><br>
+                    <small>Сумма через <span id="month">36</span> мес.</small>
+                  </span>
+                  <span class="calc-monthly">
+                    <strong><span></span> &#8381;</strong><br>
+                    <small>Ежемесячный доход</small>
+                  </span>
+                </div>
 
               </div>
             </div>
+            <!-- Row ends -->
           </section>
 
           <section class="directions">
@@ -238,6 +264,7 @@
     <script src="./js/jquery-3.5.0.slim.min.js"></script>
     <script src="./slick/slick.js"></script>
     <script src="./js/main_stroi.js"></script>
+    <script src="./js/powerange.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
