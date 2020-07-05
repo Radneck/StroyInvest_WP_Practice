@@ -4,6 +4,7 @@ $(document).ready(function () {
   var menu = $('.top-nav__menu');
   // var leftBarMenu = $('.left-sibebar__menu');
 
+
   menuBtn.on('click', function (event) {
     event.preventDefault();
     menu.toggleClass('top-nav__menu_active');
@@ -53,33 +54,5 @@ $(document).ready(function () {
         }
       }
     ]
-  });
-  var elem = document.querySelector('.calc-range');
-  var init = new Powerange(elem, { min: 100000, max: 3000000, start: 100000, hideRange: true, step: 100000 });
-  var pers, month, result, total, monthly;
-  var money = +$('.calc-range').val();
-
-  $('input[name="radiobtn"]').on('change', function(event) {
-    month = +$(this).attr('data-month');
-    pers = +$(this).attr('data-per');
-    result = Math.round(pers / 12 * month * money);
-    total = result + money;
-    monthly = parseInt(result / month);
-    $('#total').text(total.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-    $('.calc-monthly span').text(monthly.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-    $('#month').text(month);
-  });
-
-  $('.calc-range').on('change', function (event) {
-    $('.calc-summ__invest_num span').text($(this).val().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-    var radio = $('input[name="radiobtn"]:checked');
-    money = +$(this).val();
-    month = +radio.attr('data-month');
-    pers = +radio.attr('data-per');
-    result = Math.round(pers / 12 * month * money);
-    total = result + money;
-    monthly = parseInt(result / month);
-    $('#total').text(total.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
-    $('.calc-monthly span').text(monthly.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
   });
 });
